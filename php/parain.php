@@ -1,5 +1,7 @@
 <?php
 require('../appel/header.php');
+require('../appel/db.php');
+$DB->exec("SET CHARACTER SET utf8");
 ?>
 <main>
   <label for="exampleDataList" class="form-label">Rechercher une vache</label>
@@ -17,8 +19,6 @@ require('../appel/header.php');
     <option value="2">Tri par races</option>
   </select>
   <?php
-  require('../appel/db.php');
-  $DB->exec("SET CHARACTER SET utf8");
   $req = $DB->query('SELECT * FROM vaches');
    $tab = $req->fetchAll();   ?>
   <table class="table table-striped">
