@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Mar 15 Juin 2021 à 13:36
+-- Généré le :  Mar 15 Juin 2021 à 15:29
 -- Version du serveur :  5.7.34-0ubuntu0.18.04.1
 -- Version de PHP :  7.2.24-0ubuntu0.18.04.7
 
@@ -167,8 +167,7 @@ INSERT INTO `vaches` (`Nom`, `Race`, `Age`, `Descriptif`, `Photo`, `fk_Ferme`, `
 ('Marguerite', 'Montbéliarde', 12, 'Marguerite est une vahce Montbéliarde de 12 ans', 'Marguerite.jpg', 1, 1),
 ('Noirreaude', 'Angus', 13, 'Noireaude est une vache Angus de 13 ans qui a échappé à l’abattoir.', 'Noiraude.jpg', 1, 2),
 ('Noisette', 'Tarrine', 12, 'Noisette est une vache tarrine de 12 ans.', 'Noisette.jpeg', 1, 3),
-('Réglisse', 'Holstein', 13, 'Réglisse est une vache Holstein de 13 ans qui a produit du camembert.', 'Réglisse.jpeg', 2, 4),
-('Betthy', 'Angus', 12, 'Betthy est une vace de race Angus dénommée de la sorte en raison de sa robe.', NULL, 2, 5);
+('Réglisse', 'Holstein', 13, 'Réglisse est une vache Holstein de 13 ans qui a produit du camembert.', 'Réglisse.jpeg', 2, 4);
 
 --
 -- Index pour les tables exportées
