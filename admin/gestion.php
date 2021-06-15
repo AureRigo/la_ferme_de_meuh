@@ -3,7 +3,8 @@
     $DB->exec("SET CHARACTER SET utf8");  
     
     
-$newreq = $DB->query('SELECT * FROM vaches');
+$newreq = $DB->query('SELECT * FROM vaches INNER JOIN Fermes
+                      on vaches.fk_ferme=Fermes.ID_Ferme');
 $tab = $newreq->fetchAll();
 ?>
 <a href="ajoutvacheform.php">
@@ -29,7 +30,7 @@ foreach ($tab as $vache) {
     <td><?PHP echo $vache["Age"] ?></td>
     <td><?PHP echo $vache["Descriptif"] ?></td>
     <td> <img src="../images/<?PHP echo $vache["Photo"] ?>" /></td>
-    <td><?PHP echo $vache["fk_Ferme"] ?></td>
+    <td><?PHP echo $vache["Adresse"] ?></td>
     <td><a href="modifievacheform.php?id=<?php echo $vache['id_vache'];?>" method="GET">Modifier</a></td>
     <td><a href="deletevache.php?id=<?php echo $vache['id_vache'];?>" method="GET">Supprimer</a></td>
     </tr>
