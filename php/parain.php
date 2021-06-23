@@ -38,7 +38,7 @@ $DB->exec("SET CHARACTER SET utf8");
         <td><?PHP echo $vache["Race"] ?></td>
         <td><?PHP echo $vache["Age"] ?></td>
         <td><?PHP echo $vache["Descriptif"] ?></td>
-        <td> <img src="../images/<?PHP echo $vache["Photo"] ?>" /></td>
+        <td> <img class="parrain" src="../images/<?PHP echo $vache["Photo"] ?>" /></td>
         <td><?PHP echo $vache["fk_Ferme"] ?></td>
       </tr>
     <?PHP
