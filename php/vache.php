@@ -7,3 +7,8 @@
     $tab = $newreq->fetch();
     // var_dump($tab);
 ?>
+<h1><?php echo $tab['nom'];?></h1>
+<P>
+    <?php echo $tab['descriptif']; ?>
+</P>
+<img class="parrain" src="../images/<?PHP echo $vache["Photo"] ?>" />
