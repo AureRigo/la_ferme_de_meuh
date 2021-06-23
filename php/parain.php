@@ -13,14 +13,13 @@ $DB->exec("SET CHARACTER SET utf8");
     <option value="Marguerite">
     <option value="Réglisse">
   </datalist>
-  <select class="form-select" size="2" aria-label="size 3 select example">
-    <option selected>Options de tri</option>
-    <option value="1">Tri par ordre alphabétique</option>
-    <option value="2">Tri par races</option>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Races</option>
+    <option value="1">One</option>
   </select>
   <?php
   $req = $DB->query('SELECT * FROM vaches');
-   $tab = $req->fetchAll();   ?>
+  $tab = $req->fetchAll();   ?>
   <table class="table table-striped">
     <tr>
       <th>Nom</th>
@@ -34,7 +33,7 @@ $DB->exec("SET CHARACTER SET utf8");
     foreach ($tab as $vache) {
     ?>
       <tr>
-        <td><a href="./vache.php?id=<?php echo $vache["id_vache"];?>"><?PHP echo $vache["Nom"] ?></a></td>
+        <td><a href="./vache.php?id=<?php echo $vache["id_vache"]; ?>"><?PHP echo $vache["Nom"] ?></a></td>
         <td><?PHP echo $vache["Race"] ?></td>
         <td><?PHP echo $vache["Age"] ?></td>
         <td><?PHP echo $vache["Descriptif"] ?></td>
