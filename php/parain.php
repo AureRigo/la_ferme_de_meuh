@@ -13,13 +13,20 @@ $DB->exec("SET CHARACTER SET utf8");
     <option value="Marguerite">
     <option value="Réglisse">
   </datalist>
-  <select class="form-select" aria-label="Default select example">
-    <option selected>Races</option>
-    <option value="1">One</option>
-  </select>
+
   <?php
   $req = $DB->query('SELECT * FROM vaches');
   $tab = $req->fetchAll();   ?>
+  <select class="form-select" aria-label="Default select example">
+    <option selected>Races</option>
+    <?PHP
+    foreach ($tab as $vache) {
+    ?>
+    <option value="1"><?PHP echo $vache["Race"] ?></option>
+    <?PHP
+    }
+    ?>
+  </select>
   <table class="table table-striped">
     <tr>
       <th>Nom</th>
