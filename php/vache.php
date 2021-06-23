@@ -1,5 +1,5 @@
 <?php
-    require("header.php");
+    require("../appel/header.php");
     $DB->exec("SET CHARACTER SET utf8"); 
     $element=$_GET['id'];
     // var_dump($element);

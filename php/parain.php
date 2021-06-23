@@ -34,7 +34,7 @@ $DB->exec("SET CHARACTER SET utf8");
     foreach ($tab as $vache) {
     ?>
       <tr>
-        <td><?PHP echo $vache["Nom"] ?></td>
+        <td><a href="./vache.php"><?PHP echo $vache["Nom"] ?></a></td>
         <td><?PHP echo $vache["Race"] ?></td>
         <td><?PHP echo $vache["Age"] ?></td>
         <td><?PHP echo $vache["Descriptif"] ?></td>
