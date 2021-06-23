@@ -32,6 +32,6 @@ li{
 li img{
     width: 25vw;
 }
-img.parrain{
+.parrain{
     width: 25vw !important;
 }
